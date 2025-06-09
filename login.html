@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Login</title> 
+    <link rel="stylesheet" href="login.css"> 
+    <script src="login.js" defer></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" href="aguinha.png">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="logo.png" alt="AquaSec">
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="compra.html">Comprar</a></li>
+        <li><a href="login.html"><img src="login.png" alt="Login" id="logo" style="height: 35px;"></a></li>
+      </ul>
+    </nav>
+  </header>
+       <section class="fundo">
+        <div class="conteudo">
+            <img src="logo2.png" alt="AquaSec"><br>
+
+            <div class="container">
+                <label for="email">Email </label>
+                <input type="email" id="email" name="email">
+
+                <label for="senha">Senha </label>
+                <input type="password" name="senha" id="senha">
+
+                <p><a href="#" id="esqueciSenha">Esqueci minha senha</a></p>
+
+                <button>Enviar</button>
+                
+                <p>Não tem conta? <a href="cadastro.html">Inscreva-se</a></p>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AquaSec</title>
+  <link rel="stylesheet" href="contato.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script defer src="contato.js"></script>
+  <link rel="shortcut icon" href="aguinha.png">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="logo.png" alt="AquaSec" />
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="compra.html">Compra</a></li>
+        <li>
+          <a href="login.html"><img src="login.png" alt="Login" style="height: 35px" /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main>
+    <div class="contato-container">
+      <div class="mensagem">
+        <p>Ficou com <span>alguma dúvida?</span><br />Nos <span>contate</span></p>
+      </div>
+      <div class="container">
+        <form id="contatoForm">
+          <label for="nome" class="label-simples">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" required />
+ 
+          <label for="email" class="label-simples">Email:</label>
+          <input type="email" id="email" name="email" required />
+ 
+          <label for="mensagem" class="label-caixa"
+            >Preencha sua dúvida ou reclamação no campo abaixo:</label
+          >
+          <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui..." required></textarea>
+ 
+          <button type="submit">Enviar</button>
+          <p id="mensagem-sucesso">Sua mensagem foi enviada com sucesso!</p>
+        </form>
+      </div>
+    </div>
+  </main>
+ 
+  <footer class="rodape">
+    <p>
+      © 2025 por Aquasec. Todos os direitos reservados. <br />
+      Email:
+      <a href="mailto:jamyfranquilim@gmail.com">jamyfranquilim@gmail.com</a>
+      &nbsp; Local:
+      <a
+        href="https://www.google.com/maps/place/Rua+José+Amaral+Palmeira+300,+Caçapava,+SP,+12287-440"
+        target="_blank"
+        >Rua José Amaral Palmeira 300, Caçapava, SP, 12287-440</a
+      >
+      &nbsp; Telefone: <a href="tel:+551236532814">(12) 3653-2814</a>
+    </p>
+  </footer>
+</body>
+</html>
+ 

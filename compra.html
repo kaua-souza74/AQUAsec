@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compra</title>
+  <link rel="stylesheet" href="compra.css" />
+  <script src="compra.js" defer></script>
+  <link rel="shortcut icon" href="aguinha.png">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="logo.png" alt="AquaSec" />
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="compra.html">Comprar</a></li>
+        <li><a href="login.html"><img src="login.png" alt="Login" id="logo" style="height: 35px;"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="product-card">
+    <div class="product-images">
+      <div class="image-wrapper">
+        <img class="main-image" src="sensorPrincipal.jpeg" alt="Water Sensor" />
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      <div class="thumbnails">
+        <img src="sensorPrincipal.jpeg" alt="Imagem Principal" />
+        <img src="sensor1.png" alt="Sensor 1" class="imagem1"/>
+        <img src="sensor2.png" alt="Sensor 2" />
+        <img src="sensor3.jpeg" alt="Sensor 3" />
+      </div>
+    </div>
+
+    <div class="product-info">
+      <h1>Water Sensor</h1>
+      <div class="stars">★★★★★</div>
+      <div class="price">R$ 419,99</div>
+      <button class="more-info">Mais informações</button>
+      <div class="description">
+        <strong>Descrição</strong>
+        <p>Produto Water sensor, sensor de nível de água inteligente.</p>
+      </div>
+      <div class="dimensions">
+        <strong>Dimensões</strong>
+        <p>Dimensões - 12cm x 9cm</p>
+      </div>
+      <a href="checkout.html">
+        <button class="buy-button">Comprar</button>
+      </a>
+    </div>
+  </main>
+
+  <section class="comentarios-container">
+    <h2>Comentários</h2>
+    <form id="form-comentario">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <textarea id="mensagem" placeholder="Escreva seu comentário..." required></textarea>
+
+      <div class="avaliacao-estrelas" id="estrelas-avaliacao-form">
+        <label>Avaliação:</label><br>
+        <span class="estrela" data-valor="1">☆</span>
+        <span class="estrela" data-valor="2">☆</span>
+        <span class="estrela" data-valor="3">☆</span>
+        <span class="estrela" data-valor="4">☆</span>
+        <span class="estrela" data-valor="5">☆</span>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="comentarios-lista"></div>
+  </section>
+  <footer>
+    <p>
+      © 2025 por Aquasec. Todos os direitos reservados. <br />
+      Email:
+      <a href="mailto:jamyfranquilim@gmail.com">jamyfranquilim@gmail.com</a>
+      &nbsp; Local:
+      <a
+        href="https://www.google.com/maps/place/Rua+José+Amaral+Palmeira+300,+Caçapava,+SP,+12287-440"
+        target="_blank"
+        >Rua José Amaral Palmeira 300, Caçapava, SP, 12287-440</a
+      >
+      &nbsp; Telefone: <a href="tel:+551236532814">(12) 3653-2814</a>
+    </p>
+</footer>
+</body>
+</html>

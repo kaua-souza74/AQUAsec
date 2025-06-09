@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <script src="checkout.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <img src="logo.png" alt="AquaSec">
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="compra.html">Comprar</a></li>
+            <li><a href="login.html"><img src="login.png" alt="Login" id="logo" style="height: 35px;"></a></li>
+        </ul>
+        </nav>
+    </header>
+    <div class="conteudo">
+        <section>
+            <form action="#" method="post" id="formCompra">
+                <label for="nome">Nome completo</label>
+                <input type="text" name="nome" id="nome" required>
+ 
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+ 
+                <label for="CEP">CEP</label>
+                <input type="text" name="cep" id="CEP" maxlength="8" required>
+ 
+                <label for="CPF">CPF</label>
+                <input type="text" name="cpf" id="CPF" maxlength="11" required>
+ 
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado" required>
+                    <option value="">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espírito Santo</option>
+                </select>
+ 
+                <label for="pagamento">Meio de Pagamento</label>
+                <select name="pagamento" id="pagamento" required>
+                    <option value="">Selecione</option>
+                    <option value="Cartão">Cartão de Credito</option>
+                    <option value="PIX">PIX</option>
+                </select>
+                <div id="cartao-info" style="display:none; margin-top: 15px;">
+                    <label for="num-cartao">Número do Cartão</label>
+                    <input type="text" id="num-cartao" name="num-cartao" maxlength="16">
+ 
+                    <label for="validade-cartao">Validade</label>
+                    <input type="date" id="validade-cartao" name="validade-cartao">
+ 
+                    <label for="cvv-cartao">CVV</label>
+                    <input type="text" id="cvv-cartao" name="cvv-cartao" maxlength="4">
+                </div>
+ 
+                <div id="pix-info" style="display:none; margin-top: 15px;">
+                    <p>Para pagar via PIX, escaneie o QR Code abaixo:</p>
+                    <img src="qrcode-pix.png" alt="QR Code PIX" style="width:250px; display:block; margin: 0 auto;">
+                    <p>Ou use a chave PIX: 000.000.000-00</p>
+                    <form action="/upload" method="post" enctype="multipart/form-data">
+                        <label for="arquivo">Comprovante</label>
+                        <input type="file" id="arquivo" name="arquivo"><br><br>
+                    </form>
+                </div>
+            </form>
+        </section>
+ 
+        <section class="carrinho">
+            <h2>Carrinho</h2>
+            <div class="produto-container">
+                <img src="produto.png" alt="Imagem do produto" class="produto-img">
+ 
+                <table class="tabela-produto">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Qtd</th>
+                        <th>Preço</th>
+                    </tr>
+                    <tr>
+                        <td>Water Sensor</td>
+                        <td><button type="button" class="menos">-</button>
+                            <span id="quantidade">1</span>
+                            <button type="button" class="mais">+</button>
+                         </td>
+                        <td id="preco-unidade">419,99</td>
+                    </tr>
+                </table>
+            </div>
+ 
+            <hr>
+            <p><b>Descrição</b> - Produto Water sensor, sensor de nível de água inteligente</p>
+            <p><b>Dimensões</b> - 12cm x 9cm</p>
+            <hr>
+ 
+           <table class="resumo-compra">
+                <tr>
+                    <td><strong>Subtotal</strong></td>
+                    <td class="valor">R$ 419,99</td>
+                </tr>
+                <tr>
+                    <td><strong>Frete</strong></td>
+                    <td class="valor" id="frete">R$ 0,00</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td class="valor" id="total">R$ 419,00</td>
+                </tr>
+            </table>
+           
+            <button id="botao">Comprar</button>
+        </section>
+    </div>
+ 
+</body>
+<footer class="rodape">
+    <p>
+      © 2025 por Aquasec. Todos os direitos reservados. <br />
+      Email:
+      <a href="mailto:jamyfranquilim@gmail.com">jamyfranquilim@gmail.com</a>
+      &nbsp; Local:
+      <a
+        href="https://www.google.com/maps/place/Rua+José+Amaral+Palmeira+300,+Caçapava,+SP,+12287-440"
+        target="_blank"
+        >Rua José Amaral Palmeira 300, Caçapava, SP, 12287-440</a
+      >
+      &nbsp; Telefone: <a href="tel:+551236532814">(12) 3653-2814</a>
+    </p>
+</footer>
+</html>

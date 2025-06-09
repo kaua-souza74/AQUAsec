@@ -1,0 +1,463 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif; 
+} 
+
+body { 
+    line-height: 1.6; 
+   
+    margin: 0; 
+    padding: 0; 
+}
+
+.navbar { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    background-color: #2B4C7E; 
+    padding: 25px 40px; 
+    color: white; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible;
+    max-height: 90px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+ 
+.navbar img {
+    height: 100px;
+    max-height: none;
+}
+#logo {
+    height: 55px;
+    padding-right: 20px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+}
+
+.nav-links li a:hover {
+      color: #a0c4ff;
+}
+ 
+nav img {
+    height: 40px;
+}
+
+
+#historia {
+    background-color: rgb(255, 255, 255);
+    margin-top: 60px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#historia h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #2B4C7E;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#historia .historia-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+#historia .historia-text {
+    flex: 2;
+    font-size: 20px;
+    color: #222;
+    text-align: center;
+}
+
+#historia .historia-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#historia .historia-img img {
+    width:700px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+/* Section historia */
+section img {
+     width: 100%;
+     max-width: 400px;
+     margin: 20px 0;
+     border-radius: 8px;
+}
+.grid {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     gap: 20px;
+     margin:30px;
+     
+}
+.grid div {
+     background-color: #e4edf8;
+     padding: 20px;
+     border-radius: 8px;
+     flex: 1 1 250px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.grid div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+#sobre {
+    background-color: #2B4C7E;
+}
+/* Section dos valores */
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    background: white;
+}
+
+.produto-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.produto-content img {
+    width: 400px;
+    height: 420px;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.produto-content .produto-text {
+    flex: 1;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.produto-content .produto-text h3 {
+    font-size: 2rem;
+    color: #2B4C7E;
+    margin-bottom: 18px;
+}
+
+.produto-content .produto-text p {
+    font-size: 1.25rem;
+    color: #222;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    width: 500px;
+    
+}
+
+.produto-content .produto-text button {
+    align-self: flex-start;
+    background-color: #1f3b66;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(43,76,126,0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.produto-content .produto-text button:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+}
+button {
+    height: 60px;
+    width: 300px;
+    }
+
+    
+/* Section produto */
+.video-section {
+     background-color: #1f3b66;
+     padding: 40px;
+    
+     color: white;
+     text-align: center;
+}
+.video-section h2 {
+     margin-bottom: 20px;
+}
+#video {
+        width: 100%;
+        max-width: 800px;
+        height: 450px;
+        border-radius: 8px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+/* Section vídeo */
+footer {
+      
+      background-color: #1f3b66;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+ 
+    footer a {
+      color: #bcd4f0;
+      text-decoration: none;
+    }
+
+
+@media (max-width: 768px) {
+      .menu-toggle {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #2B4C7E;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .navbar {
+    height: 90px;
+    padding: 10px 20px;
+  }
+  .navbar ul li img {
+    margin-left: 20px;
+  }
+     #historia .historia-content {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    #historia .historia-text {
+        text-align: center;
+    }
+    #historia .historia-img img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    /* Menu toggle para telas menores */
+      .menu-toggle {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #2B4C7E;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .navbar {
+    height: 90px;
+    padding: 10px 20px;
+  }
+  .navbar ul li img {
+    margin-left: 20px;
+  }
+
+    /* Ajuste da seção história */
+    #historia .historia-content {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    #historia .historia-text {
+        text-align: center;
+        font-size: 18px; /* texto um pouco menor para caber melhor */
+    }
+
+    #historia .historia-img img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Grid passa a coluna única */
+    .grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 20px;
+        margin-left: 20px;
+    }
+
+    /* Ajusta produto */
+    .produto-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .produto-content img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 0 20px 0;
+    }
+
+    .produto-content .produto-text {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .produto-content .produto-text p {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    /* Botão responsivo */
+    button {
+        width: 100%;
+        max-width: 300px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    /* Vídeo responsivo */
+    #video {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para telas muito pequenas (celulares pequenos) */
+
+      .menu-toggle {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #2B4C7E;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .navbar {
+    height: 90px;
+    padding: 10px 20px;
+  }
+  .navbar ul li img {
+    margin-left: 20px;
+  }
+
+    #historia {
+        padding: 50px 15px;
+    }
+
+    #historia h2 {
+        font-size: 24px;
+    }
+
+    .produto-content .produto-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .produto-content .produto-text p {
+        font-size: 1rem;
+    }
+
+    button {
+        max-width: 100%;
+        height: 45px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+      margin-top: 50px;
+      background-color: #1f3b66;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+ 
+    footer a {
+      color: #bcd4f0;
+      text-decoration: none;
+    }
+}
